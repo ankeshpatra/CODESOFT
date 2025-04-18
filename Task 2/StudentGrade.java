@@ -20,7 +20,7 @@ public class StudentGrade {
                     marks.add(mark);
                     break;
                 } else {
-                    System.out.println("❌ Invalid input. Please enter marks between 0 and 100.");
+                    System.out.println("Invalid input. Please enter marks between 0 and 100.");
                 }
             }
         }
