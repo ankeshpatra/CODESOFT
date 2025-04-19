@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class StudentGrade {
     public static void main(String[] args) {
         int n, totalMarks = 0;
-        double averageMarks = 0.0;
+        double averagepercent = 0.0;
         ArrayList<Integer> marks = new ArrayList<>();
 
         Scanner sc = new Scanner(System.in);
@@ -29,16 +29,16 @@ public class StudentGrade {
             totalMarks += mark;
         }
 
-        averageMarks = (double) totalMarks / n;
+        averagepercent = (double) totalMarks / n;
 
         char grade;
-        if (averageMarks >= 90 && averageMarks <= 100) {
+        if (averagepercent >= 90 && averagepercent <= 100) {
             grade = 'A';
-        } else if (averageMarks >= 70) {
+        } else if (averagepercent >= 70) {
             grade = 'B';
-        } else if (averageMarks >= 50) {
+        } else if (averagepercent >= 50) {
             grade = 'C';
-        } else if (averageMarks >= 40) {
+        } else if (averagepercent >= 40) {
             grade = 'D';
         } else {
             grade = 'F';
@@ -46,7 +46,7 @@ public class StudentGrade {
 
         System.out.println();
         System.out.println("Total marks of all subjects are: " + totalMarks);
-        System.out.printf("Average marks: %.2f%%\n", averageMarks);
+        System.out.printf("Average Percent is: %.2f%%\n", averagepercent);
         System.out.println("Overall grade: " + grade);
         System.out.println();
 
